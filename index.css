@@ -1,0 +1,1453 @@
+@font-face {
+  font-family: Aloevera-regular;
+  src: url("./assets/fonts/Aloevera-Regular.otf");
+
+  font-family: Aloevera-medium;
+  src: url("./assets/fonts/Aloevera-Medium.otf");
+
+  font-family: Aloevera-semibold;
+  src: url("./assets/fonts/Aloevera-SemiBold.otf");
+}
+:root {
+  --black: #000000;
+  --gray-primary: #d9d9d9;
+  --gray-secundary: rgba(0, 0, 0, 0.2);
+  --lg: 30px;
+  --md: 25px;
+  --sm: 15px;
+}
+:root {
+  --black: #000000;
+  --gray-primary: #d9d9d9;
+  --gray-secundary: rgba(0, 0, 0, 0.2);
+  --lg: 30px;
+  --md: 25px;
+  --sm: 15px;
+}
+html {
+  margin: 0;
+}
+body {
+  margin: 0;
+}
+header {
+  width: 100%;
+  height: auto;
+  margin-top: 20px;
+  background-color: rgba(255, 255, 255, 0.611);
+  backdrop-filter: blur(10px);
+  position: sticky;
+  top: 0;
+  z-index: 5;
+}
+nav {
+  text-align: center;
+  margin: auto;
+  padding: 15px;
+}
+nav a {
+  text-decoration: none;
+  font-family: Aloevera-regular;
+  font-size: 2.5rem;
+  margin: 30px;
+  color: var(--black);
+}
+
+.background-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 25%;
+}
+.logo-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+.logo {
+  margin: auto;
+  width: 45vw;
+}
+.textura-container {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 65vh;
+  overflow: hidden;
+  top: 35%;
+}
+.textura {
+  width: 110vw;
+  height: auto;
+  object-fit: cover;
+  position: relative;
+  right: 5%;
+  opacity: 70%;
+}
+.sobre {
+  width: 100%;
+  height: auto;
+  z-index: 10;
+  margin-bottom: 25%;
+}
+
+.sobre-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.sobre-container h1 {
+  font-family: Aloevera-semibold;
+  font-size: 5rem;
+  text-align: center;
+}
+.sobre-container p {
+  text-align: center;
+  font-family: Aloevera-regular;
+  font-size: 4rem;
+}
+.equipo {
+  width: 100%;
+  height: auto;
+  margin-bottom: 25%;
+}
+.equipo-titulo {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.equipo-titulo h1 {
+  margin-left: 70px;
+  font-size: 8rem;
+  font-family: Aloevera-semibold;
+}
+
+.titulo-2 {
+  width: 60vw;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--gray-secundary);
+}
+
+.titulo-2 p {
+  font-family: Aloevera-regular;
+  text-align: center;
+  font-size: 3.5em;
+  margin: 0;
+}
+.integrantes-container {
+  width: 100%;
+  height: auto;
+  margin-top: 9%;
+}
+.integrantes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
+  margin: 0 50px;
+}
+.integrantes img {
+  width: 500px;
+}
+.integrantes h1 {
+  font-family: Aloevera-medium;
+  font-size: 3rem;
+}
+.integrantes p {
+  font-family: Aloevera-regular;
+  font-size: 2.5rem;
+}
+#integrante-1 {
+  margin-left: 15px;
+  margin-right: auto;
+}
+
+#integrante-3 {
+  margin-left: auto;
+  margin-right: 15px;
+}
+.servicios-container {
+  width: 100%;
+  height: auto;
+}
+.servicios {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 25%;
+}
+.servicios #title {
+  font-family: Aloevera-medium;
+  font-size: 5rem;
+  text-align: center;
+  margin-bottom: 90px;
+}
+.servicios-cards {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+#fig1,
+#fig2,
+#fig3 {
+  width: 100%;
+  height: 68%;
+  margin: 0 0 65px 0;
+}
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin: 0;
+  border-radius: 4%;
+}
+.card {
+  width: 620px;
+  height: 900px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #131313;
+  position: relative;
+  margin: 40px;
+  border-radius: 4%;
+  box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.8);
+}
+.card h1 {
+  font-family: Aloevera-regular;
+  font-size: 2.5rem;
+  font-weight: 100;
+  color: white;
+  text-align: center;
+}
+.portafolio-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  background-color: #000000;
+}
+.portafolio-container h1 {
+  color: white;
+}
+.portafolio-container p {
+  color: white;
+}
+.portafolio-container .title {
+  font-family: Aloevera-semibold;
+  font-size: 5rem;
+  text-align: center;
+}
+
+.portafolio {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10%;
+}
+.fila-1 {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+  margin: 30px;
+}
+.fila-1 h1 {
+  font-family: Aloevera-medium;
+  font-size: 4rem;
+}
+.fila-1 p {
+  font-family: Aloevera-regular;
+  font-size: 3rem;
+}
+#portafolio figure {
+  width: 700px;
+  height: 550px;
+}
+.fila-1 div {
+  margin: 70px 90px 0px 90px;
+}
+.fila-1 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5%;
+}
+.fila-2 {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+  margin: 30px;
+}
+.fila-2 h1 {
+  font-family: Aloevera-medium;
+  font-size: 4rem;
+}
+.fila-2 p {
+  font-family: Aloevera-regular;
+  font-size: 3rem;
+}
+.fila-2 div {
+  margin: 70px 90px 0px 90px;
+}
+.fila-2 img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5%;
+}
+.contacto {
+  width: 100%;
+  height: auto;
+  background-color: #000000;
+}
+.contacto-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.content {
+  display: none;
+}
+.contacto-container h1 {
+  width: 70%;
+  font-family: Aloevera-semibold;
+  font-size: 9em;
+  color: white;
+  padding-left: 10px;
+  z-index: 3;
+}
+.redes {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-left: 5%;
+  transition: transform 0.5s ease;
+}
+.red-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 10px;
+}
+.red-container img {
+  width: 110px;
+  height: 110px;
+}
+.red-container p {
+  font-family: Aloevera-regular;
+  font-size: 3em;
+  color: white;
+}
+
+#contacto-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+#content {
+  display: none;
+}
+#title {
+  width: 70%;
+  height: auto;
+}
+#title h1 {
+  width: 100%;
+  height: auto;
+  color: white;
+  font-family: Aloevera-semibold;
+  font-size: 8.3em;
+  text-align: left;
+  word-wrap: break-word;
+}
+
+#redes {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-left: 5%;
+  transition: transform 0.5s ease;
+}
+
+#red-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  flex: 0 0 100%;
+}
+#red-container img {
+  width: 110px;
+}
+#red-container p {
+  font-family: Aloevera-regular;
+  font-size: 3rem;
+  color: white;
+  text-align: center;
+}
+.contacto-slide {
+  position: relative;
+  width: 100%;
+  height: 100vh !important;
+  overflow: hidden;
+}
+.contacto-item {
+  background-color: black;
+  position: absolute;
+  height: 100vh;
+  transition: all 0.5s ease;
+}
+
+.hidden {
+  opacity: 0;
+  transform: translate(100%, 0);
+  visibility: hidden;
+}
+
+
+@media (max-width: 320px) {
+  nav {
+    text-align: center;
+    margin: auto;
+    padding: 15px;
+  }
+  nav a {
+    text-decoration: none;
+    font-family: Aloevera-medium;
+    font-weight: 100;
+    font-size: 1rem;
+    margin: 10px;
+    color: var(--black);
+  }
+  .background-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 55%;
+  }
+  .logo-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .logo {
+    margin: auto;
+    width: 80vw;
+  }
+  .sobre {
+    width: 100%;
+    height: auto;
+    z-index: 10;
+    margin-bottom: 55%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .sobre-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .sobre-container h1 {
+    font-family: Aloevera-semibold;
+    font-size: 2.2rem;
+    text-align: center;
+  }
+  .sobre-container p {
+    text-align: center;
+    font-family: Aloevera-regular;
+    font-size: 1.5rem;
+  }
+  .equipo-titulo {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .equipo-titulo h1 {
+    font-size: 4rem;
+    text-align: center;
+    margin: 0 auto 15px auto;
+  }
+  .titulo-2 p {
+    text-align: center;
+    font-size: 1.2em;
+    margin: 0;
+  }
+  .titulo-2 {
+    width: 100vw;
+    height: 10vh;
+  }
+
+  .integrantes-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .integrantes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  #integrante-1 {
+    margin: auto;
+  }
+
+  #integrante-3 {
+    margin: auto;
+  }
+  .integrantes {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    text-align: center;
+    margin: 0;
+  }
+  .integrantes img {
+    width: 250px;
+  }
+  .integrantes h1 {
+    font-family: Aloevera-medium;
+    font-size: 2rem;
+  }
+  .integrantes p {
+    font-family: Aloevera-regular;
+    font-size: 1.5rem;
+  }
+  .servicios-container {
+    width: 100%;
+    height: auto;
+  }
+  .servicios {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25%;
+  }
+  .servicios #title {
+    font-family: Aloevera-medium;
+    font-size: 2rem;
+    text-align: center;
+  }
+  .servicios-cards {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  }
+
+  #fig1,
+  #fig2,
+  #fig3 {
+    height: 200px; /* Ajusta este valor según tus necesidades */
+    margin: 0 0 35px 0;
+  }
+  .card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin: 0;
+    border-radius: 4%;
+  }
+  .card {
+    width: 95%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #131313;
+    position: relative;
+    margin: 40px auto;
+    border-radius: 4%;
+    box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.8);
+  }
+  .card h1 {
+    font-family: Aloevera-regular;
+    font-size: 1.2rem;
+    color: white;
+    margin: 0 auto 25px auto;
+  }
+  .portafolio-container {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    justify-items: center;
+    background-color: #000000;
+  }
+  .portafolio-container h1 {
+    color: white;
+  }
+  .portafolio-container p {
+    color: white;
+  }
+  .portafolio-container .title {
+    font-family: Aloevera-semibold;
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .portafolio {
+    width: 80%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10%;
+  }
+  .fila-1 {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    margin: 20px auto;
+  }
+  #portafolio figure {
+    width: 240px;
+    height: 200px;
+  }
+  .fila-1 .portafolio {
+    width: 100%;
+    height: auto;
+  }
+  .fila-1 h1 {
+    font-family: Aloevera-medium;
+    font-size: 2.5rem;
+  }
+  .fila-1 p {
+    font-family: Aloevera-regular;
+    font-size: 1.5rem;
+  }
+  .fila-1 div {
+    margin: 0;
+  }
+  .fila-1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5%;
+  }
+  .fila-2 {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    margin: 20px auto;
+  }
+  .fila-2 h1 {
+    font-family: Aloevera-medium;
+    font-size: 2rem;
+  }
+  .fila-2 p {
+    font-family: Aloevera-regular;
+    font-size: 1.5rem;
+  }
+  .fila-2 div {
+    margin: 0;
+  }
+  .fila-2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5%;
+  }
+  #portafolio {
+    margin-bottom: 35px;
+  }
+  .contacto-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contacto-container h1 {
+    width: 100%;
+    font-family: Aloevera-semibold;
+    font-size: 2.5em;
+    color: white;
+    text-align: center;
+    z-index: 3;
+  }
+  .redes {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    margin-left: 5%;
+  }
+  .red-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 10px;
+  }
+  .red-container img {
+    width: 30px;
+    height: 30px;
+  }
+  .red-container p {
+    font-family: Aloevera-regular;
+    font-size: 1.2em;
+    color: white;
+  }
+  #contacto-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #title {
+    width: 90%;
+    height: auto;
+  }
+  #title h1 {
+    height: auto;
+    color: white;
+    font-family: Aloevera-semibold;
+    font-size: 2.1em;
+    text-align: center;
+  }
+
+  #redes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #red {
+    width: auto;
+    height: auto;
+  }
+
+  #red-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #red-container img {
+    width: 50px;
+  }
+  #red-container p {
+    font-family: Aloevera-regular;
+    font-size: 1em;
+    color: white;
+    margin: 25px;
+    text-align: center;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1020px) {
+  /* Medidas tablets */
+  nav {
+    text-align: center;
+    margin: auto;
+    padding: 15px;
+  }
+  nav a {
+    text-decoration: none;
+    font-family: Aloevera-regular;
+    font-size: 1.5rem;
+    margin: 10px;
+    color: var(--black);
+  }
+
+  .background-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 55%;
+  }
+  .logo-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .logo {
+    margin: auto;
+    width: 45vw;
+  }
+  .textura-container {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 65vh;
+    overflow: hidden;
+    top: 35%;
+  }
+  .textura {
+    width: 110vw;
+    height: auto;
+    object-fit: cover;
+    position: relative;
+    right: 5%;
+    opacity: 70%;
+  }
+  .sobre {
+    width: 100%;
+    height: auto;
+    z-index: 10;
+    margin-bottom: 35%;
+  }
+  .sobre-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .sobre-container h1 {
+    font-family: Aloevera-semibold;
+    font-size: 3rem;
+    text-align: center;
+  }
+  .sobre-container p {
+    text-align: center;
+    font-family: Aloevera-regular;
+    font-size: 2rem;
+  }
+  .equipo {
+    width: 100%;
+    height: auto;
+    margin-bottom: 35%;
+  }
+  .equipo-titulo {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+  }
+  .equipo-titulo h1 {
+    margin-left: 70px;
+    font-size: 5.5rem;
+    font-family: Aloevera-semibold;
+    margin: 35px auto;
+  }
+
+  .titulo-2 {
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--gray-secundary);
+  }
+
+  .titulo-2 p {
+    font-family: Aloevera-regular;
+    text-align: center;
+    font-size: 2em;
+    margin: 0;
+  }
+  .integrantes-container {
+    width: 100%;
+    height: auto;
+    margin-top: 9%;
+  }
+  .integrantes {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+  }
+  .integrantes img {
+    width: 300px;
+  }
+  .integrantes h1 {
+    font-family: Aloevera-medium;
+    font-size: 2rem;
+  }
+  .integrantes p {
+    font-family: Aloevera-regular;
+    font-size: 2rem;
+  }
+  #integrante-1 {
+    margin-left: 15px;
+    margin-right: auto;
+  }
+
+  #integrante-3 {
+    margin: auto;
+  }
+  .portafolio-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    background-color: #000000;
+  }
+  .portafolio-container h1 {
+    color: white;
+  }
+  .portafolio-container p {
+    color: white;
+  }
+  .portafolio-container .title {
+    font-family: Aloevera-semibold;
+    font-size: 4rem;
+    text-align: center;
+  }
+
+  .portafolio {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 35%;
+  }
+  .fila-1 {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+  }
+  #portafolio figure {
+    width: 300px;
+    height: 200px;
+  }
+  .fila-1 #portafolio {
+    margin: 0;
+  }
+  .fila-2 #portafolio {
+    margin: 0;
+  }
+  .fila-1 h1 {
+    font-family: Aloevera-medium;
+    font-size: 3.5rem;
+  }
+  .fila-1 p {
+    font-family: Aloevera-regular;
+    font-size: 2rem;
+  }
+  .fila-1 div {
+    margin: 70px 90px 0px 90px;
+  }
+  .fila-1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5%;
+  }
+  .fila-2 {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+  }
+  .fila-2 h1 {
+    font-family: Aloevera-medium;
+    font-size: 3.5rem;
+    text-align: center;
+  }
+  .fila-2 p {
+    font-family: Aloevera-regular;
+    font-size: 2rem;
+  }
+  .fila-2 div {
+    margin: 70px 90px 0px 90px;
+  }
+  .fila-2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5%;
+  }
+  .contacto {
+    width: 100%;
+    height: auto;
+    background-color: #000000;
+  }
+  .contacto-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .contacto-container h1 {
+    width: 100%;
+    font-family: Aloevera-semibold;
+    font-size: 5.2em;
+    color: white;
+    text-align: center;
+    margin: auto;
+  }
+  .redes {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+  }
+  .red-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 10px;
+  }
+  .red-container img {
+    width: 70px;
+    height: 70px;
+  }
+  .red-container p {
+    font-family: Aloevera-regular;
+    font-size: 2em;
+    color: white;
+  }
+
+  #contacto-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #title {
+    width: 100%;
+    height: auto;
+  }
+  #title h1 {
+    height: auto;
+    color: white;
+    font-family: Aloevera-semibold;
+    font-size: 5.2em;
+    text-align: center;
+  }
+
+  #redes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  }
+  #red {
+    width: auto;
+    height: auto;
+  }
+  #red-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 30px auto;
+  }
+  #red-container img {
+    width: 90px;
+  }
+  #red-container p {
+    font-family: Aloevera-regular;
+    font-size: 1.8rem;
+    color: white;
+    margin: auto;
+    text-align: center;
+  }
+}
+@media (min-width: 600px) and (max-height: 960px) {
+  /* Medidas tablets 2 */
+  nav {
+    text-align: center;
+    margin: auto;
+    padding: 15px;
+  }
+  nav a {
+    text-decoration: none;
+    font-family: Aloevera-regular;
+    font-size: 1.5rem;
+    margin: 10px;
+    color: var(--black);
+  }
+
+  .background-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 55%;
+  }
+  .logo-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .logo {
+    margin: auto;
+    width: 45vw;
+  }
+  .textura-container {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 65vh;
+    overflow: hidden;
+    top: 35%;
+  }
+  .textura {
+    width: 110vw;
+    height: auto;
+    object-fit: cover;
+    position: relative;
+    right: 5%;
+    opacity: 70%;
+  }
+  .sobre {
+    width: 100%;
+    height: auto;
+    z-index: 10;
+    margin-bottom: 35%;
+  }
+  .sobre-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .sobre-container h1 {
+    font-family: Aloevera-semibold;
+    font-size: 3rem;
+    text-align: center;
+  }
+  .sobre-container p {
+    text-align: center;
+    font-family: Aloevera-regular;
+    font-size: 2rem;
+  }
+  .equipo {
+    width: 100%;
+    height: auto;
+    margin-bottom: 35%;
+  }
+  .equipo-titulo {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+  }
+  .equipo-titulo h1 {
+    font-size: 5.5rem;
+    font-family: Aloevera-semibold;
+    margin: 0 auto 35px auto;
+  }
+
+  .titulo-2 {
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--gray-secundary);
+  }
+
+  .titulo-2 p {
+    font-family: Aloevera-regular;
+    text-align: center;
+    font-size: 1.8em;
+    margin: 0;
+  }
+  .integrantes-container {
+    width: 100%;
+    height: auto;
+    margin-top: 9%;
+  }
+  .integrantes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .integrantes img {
+    width: 300px;
+  }
+  .integrantes h1 {
+    font-family: Aloevera-medium;
+    font-size: 2rem;
+  }
+  .integrantes p {
+    font-family: Aloevera-regular;
+    font-size: 2rem;
+  }
+  #integrante-1 {
+    margin: auto;
+  }
+
+  #integrante-3 {
+    margin: auto;
+  }
+  .portafolio-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    background-color: #000000;
+  }
+  .portafolio-container h1 {
+    color: white;
+  }
+  .portafolio-container p {
+    color: white;
+  }
+  .portafolio-container .title {
+    font-family: Aloevera-semibold;
+    font-size: 4rem;
+    text-align: center;
+  }
+
+  .portafolio {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 35%;
+  }
+  #portafolio figure {
+    width: 340px;
+    height: 200px;
+  }
+  .fila-1 {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+  }
+  .fila-1 #portafolio {
+    margin: 0;
+  }
+  .fila-2 #portafolio {
+    margin: 0;
+  }
+  .fila-1 h1 {
+    font-family: Aloevera-medium;
+    font-size: 3.5rem;
+  }
+  .fila-1 p {
+    font-family: Aloevera-regular;
+    font-size: 2rem;
+  }
+  .fila-1 div {
+    margin: 70px 90px 0px 90px;
+  }
+  .fila-1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5%;
+  }
+  .fila-2 {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+  }
+  .fila-2 h1 {
+    font-family: Aloevera-medium;
+    font-size: 3.5rem;
+  }
+  .fila-2 p {
+    font-family: Aloevera-regular;
+    font-size: 2rem;
+  }
+  .fila-2 div {
+    margin: 70px 90px 0px 90px;
+  }
+  .fila-2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5%;
+  }
+  .contacto {
+    width: 100%;
+    height: auto;
+    background-color: #000000;
+  }
+  .contacto-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+  }
+  .contacto-container h1 {
+    width: 100%;
+    font-family: Aloevera-semibold;
+    font-size: 4.6em;
+    color: white;
+    text-align: center;
+    margin: auto;
+  }
+  .redes {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+  }
+  .red-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 10px;
+  }
+  .red-container img {
+    width: 70px;
+    height: 70px;
+  }
+  .red-container p {
+    font-family: Aloevera-regular;
+    font-size: 2em;
+    color: white;
+  }
+
+  #contacto-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #title {
+    width: 100%;
+    height: auto;
+  }
+  #title h1 {
+    height: auto;
+    color: white;
+    font-family: Aloevera-semibold;
+    font-size: 4.8em;
+    text-align: center;
+  }
+
+  #redes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #red {
+    width: auto;
+    height: auto;
+  }
+  #red-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 30px;
+  }
+  #red-container img {
+    width: 90px;
+  }
+  #red-container p {
+    font-family: Aloevera-regular;
+    font-size: 1.8rem;
+    color: white;
+    margin: auto;
+    text-align: center;
+  }
+}
